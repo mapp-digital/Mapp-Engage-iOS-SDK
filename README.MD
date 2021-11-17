@@ -1,4 +1,4 @@
-Appoxee SDK
+Mapp SDK
 ===========
 This repository contains the Mapp iOS SDK.
 
@@ -18,13 +18,13 @@ end
 
 ```ruby
 target 'project_name' do
-    pod 'MappSDK', :git => 'https://github.com/MappCloud/MappSDK.git', :tag => '6.0.4'
+    pod 'MappSDK', :git => 'https://github.com/MappCloud/MappSDK.git', :tag => '6.0.5'
 end
 ```
 
 **Manual**
 
-* Drag and drop the ```AppoxeeSDK.framework``` to your project.
+* Drag and drop the ```AppoxeeSDK.xcframework``` to your project.
 * Drag and drop the ```AppoxeeSDKResources.bundle``` to your project.
 * Link ```UserNotifications.framework``` to your project.
 
@@ -33,8 +33,6 @@ Configuration file
 ------------------
 
 Make sure to provide an ```AppoxeeConfig.plist``` file.
-
-![Image of AppoxeeConfiguration.plist](https://api.media.atlassian.com/file/1ff3fd1a-09a0-4683-a4ec-c470e2084c03/image?mode=full-fit&client=44cad860-1de4-4827-af16-bcbe31ebb27d&token=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiI0NGNhZDg2MC0xZGU0LTQ4MjctYWYxNi1iY2JlMzFlYmIyN2QiLCJhY2Nlc3MiOnsidXJuOmZpbGVzdG9yZTpmaWxlOjFmZjNmZDFhLTA5YTAtNDY4My1hNGVjLWM0NzBlMjA4NGMwMyI6WyJyZWFkIl19LCJleHAiOjE2MzY5ODMyNjUsIm5iZiI6MTYzNjk3OTkwNX0.z1Ih1rDmECDbjeIC-g5EY7mXZzww5ww04EXEMtV61zM)
 
 ```<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
