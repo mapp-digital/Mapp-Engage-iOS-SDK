@@ -14,7 +14,6 @@
 
 typedef NS_ENUM(NSInteger, SERVER) {
     L3,
-    L3_US,
     EMC,
     EMC_US,
     CROC,
