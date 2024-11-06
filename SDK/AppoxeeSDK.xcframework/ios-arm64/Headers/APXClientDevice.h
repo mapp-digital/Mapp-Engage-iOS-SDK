@@ -20,6 +20,7 @@
 @property (nonatomic, strong) NSString *osVersion;
 @property (nonatomic, strong) NSString *hardwearType;
 @property (nonatomic, strong) NSString *applicationID;
+@property (nonatomic, strong) NSString *sdkID;
 @property (nonatomic, getter = isInboxEnabled) BOOL inboxEnabled;
 @property (nonatomic, getter = isPushEnabled) BOOL pushEnabled;
 

@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "MappSDK"
-  s.version      = "6.0.7"
+  s.version      = "6.0.8"
   s.cocoapods_version = '>= 1.10'
   s.summary      = "Mapp SDK enables developers to harnest the full power of Mapp Engage Platform on their iOS applications."
   s.description  = 	<<-DESC
