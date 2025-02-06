@@ -71,7 +71,7 @@ typedef void(^AppoxeeCompletionHandler)(NSError * _Nullable appoxeeError, id _Nu
  * Set this property when ever needed, to change this behavior.
  * Default value is NO.
  */
-@property (nonatomic) BOOL showNotificationsOnForeground;
+@property (nonatomic, readwrite) BOOL showNotificationsOnForeground;
 
 
 /*!
