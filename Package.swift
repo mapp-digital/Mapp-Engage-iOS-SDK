@@ -4,13 +4,29 @@
 import PackageDescription
 
 let package = Package(
-    name: "AppoxeeSDK",
+    name: "MappEngage",
+    platforms: [
+        .iOS(.v15)
+    ],
     products: [
-        .library(name: "AppoxeeSDK", targets: ["AppoxeeSDK"])
+        .library(name: "MappEngage", targets: ["MappEngage"])
     ],
-    dependencies: [
-    ],
+    dependencies: [],
     targets: [
-        .binaryTarget(name: "AppoxeeSDK", path: "./SDK/AppoxeeSDK.xcframework")
+        .target(
+            name: "MappEngage",
+            dependencies: [
+                "AppoxeeWrapper"
+            ]
+        ),
+        .target(
+            name: "AppoxeeWrapper",
+            dependencies: ["AppoxeeSDK"],
+            path: "AppoxeeWrapper/AppoxeeWrapper"
+        ),
+        .binaryTarget(
+            name: "AppoxeeSDK",
+            path: "./SDK/AppoxeeSDK.xcframework"
+        )
     ]
 )
