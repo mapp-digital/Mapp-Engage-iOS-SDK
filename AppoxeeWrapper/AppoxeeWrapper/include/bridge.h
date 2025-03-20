@@ -1,12 +1,12 @@
 //
-//  Header.h
-//  AppoxeeSDK
+//  bridge.h
+//  MappEngage
 //
 //  Created by Stefan Stevanovic on 20.3.25..
 //
 
-#ifndef Bridge_h
-#define Bridge_h
+#ifndef bridge_h
+#define bridge_h
 
 #ifdef __OBJC__
 
@@ -15,7 +15,6 @@
 
 #endif
 
-
 #include <stdio.h>
 
-#endif /* Bridge_h */
+#endif /* bridge_h */
