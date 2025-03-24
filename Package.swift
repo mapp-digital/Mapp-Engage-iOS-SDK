@@ -19,7 +19,8 @@ let package = Package(
                 "AppoxeeWrapper"
             ],
             resources: [
-                .process("../../SDK/AppoxeeSDKResources.bundle")
+                //.process("../../SDK/AppoxeeSDKResources.bundle")
+                .copy("AppoxeeSDKResources.bundle")
             ]
         ),
         .target(
