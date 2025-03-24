@@ -17,6 +17,9 @@ let package = Package(
             name: "MappEngage",
             dependencies: [
                 "AppoxeeWrapper"
+            ],
+            resources: [
+                .process("../../SDK/AppoxeeSDKResources.bundle")
             ]
         ),
         .target(
