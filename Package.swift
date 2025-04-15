@@ -4,17 +4,17 @@
 import PackageDescription
 
 let package = Package(
-    name: "MappEngage",
+    name: "Mapp-Engage-iOS-SDK",
     platforms: [
         .iOS(.v15)
     ],
     products: [
-        .library(name: "MappEngage", targets: ["MappEngage"])
+        .library(name: "Mapp-Engage-iOS-SDK", targets: ["Mapp-Engage-iOS-SDK"])
     ],
     dependencies: [],
     targets: [
         .target(
-            name: "MappEngage",
+            name: "Mapp-Engage-iOS-SDK",
             dependencies: [
                 "AppoxeeWrapper"
             ],
