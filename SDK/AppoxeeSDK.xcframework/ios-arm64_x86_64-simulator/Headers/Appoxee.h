@@ -490,6 +490,23 @@ typedef void(^AppoxeeCompletionHandler)(NSError * _Nullable appoxeeError, id _Nu
  @param handler Code Block to be executed when method completes with an NSError object and data as arguments.
  */
 - (void)setDeviceAlias:(nullable NSString *)alias withCompletionHandler:(nullable AppoxeeCompletionHandler)handler;
+/**
+ Set an alias to be identifies with a device.
+ @brief Method sets an alias to identify a device.
+ <pre><code>
+ [[Appoxee shared] setDeviceAlias:@"Alias" withCompletionHandler:^(NSError *appoxeeError, id data) {
+ 
+    if (!appoxeeError) {
+ 
+        // Alias was set.
+    }
+ }];
+ </code></pre>
+ @param alias An NSString object representing an alias.
+ @param resendAttributes A BOOL value indicating if attributes should be resent to the server.
+ @param handler Code Block to be executed when method completes with an NSError object and data as arguments.
+ */
+- (void)setDeviceAlias:(nullable NSString *)alias withResendAttributes: (BOOL) resendAttributes withCompletionHandler:(nullable AppoxeeCompletionHandler)handler;
 
 /**
  Remove an alias from a device.
@@ -674,6 +691,12 @@ typedef void(^AppoxeeCompletionHandler)(NSError * _Nullable appoxeeError, id _Nu
  */
 - (void)setDateValue:(nonnull NSDate *)date forKey:(nonnull NSString *)key withCompletionHandler:(nullable AppoxeeCompletionHandler)handler;
 
+/// Set custom attributes to Mapp Servers.
+/// @param attributes NSDictionary with custom attributes.
+/// @param handler Code Block to be executed when method completes with an NSError object and data as arguments.
+- (void)setCustomAttributtes:(nonnull NSDictionary *)attributes withCompletionHandler:(nullable AppoxeeCompletionHandler)handler;
+
+- (void)getCustomAttributes:(nonnull NSArray *)attributes withCompletionHandler:(nullable AppoxeeCompletionHandler)handler;
 /**
  Set a custom number for a key to Appoxee Servers.
  @brief Method sets a custom value of NSNumber to Appoxee Servers.
